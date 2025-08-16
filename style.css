@@ -1,0 +1,136 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #212121;
+}
+
+
+.container {
+  background: #333;
+  padding: 30px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+
+  
+  -webkit-box-reflect: below 8px 
+    linear-gradient(transparent, rgba(0, 0, 0, 0.2));
+}
+
+h2 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background: #282828;
+  border-radius: 8px;
+  padding: 5px;
+  margin-bottom: 20px;
+}
+
+#password {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#toggleBtn {
+  background: #444;
+  color: #aaa;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+#toggleBtn:hover {
+  background: #555;
+}
+
+
+.strength-indicator {
+  width: 100%;
+  text-align: left;
+}
+
+#strength-bar {
+  width: 0%;
+  height: 8px;
+  border-radius: 4px;
+  background: #555; 
+  transition: width 0.4s ease, background 0.4s ease;
+  margin-bottom: 10px;
+}
+
+#message {
+  font-size: 0.9em;
+  font-weight: 500;
+  height: 20px;
+  color: #ccc;
+  transition: color 0.3s ease;
+}
+
+
+.weak #strength-bar {
+  width: 33%;
+  background: #ff4757;
+  box-shadow: 0 0 8px #ff4757;
+}
+
+.medium #strength-bar {
+  width: 66%;
+  background: #ffa502;
+  box-shadow: 0 0 8px #ffa502;
+}
+
+.strong #strength-bar {
+  width: 100%;
+  background: #2ed573;
+  box-shadow: 0 0 8px #2ed573;
+}
+
+
+.generator {
+  margin-top: 15px;
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+#generateBtn {
+  background: #2ed573;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 5px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #fff;
+  transition: background 0.3s ease;
+}
+
+#generateBtn:hover {
+  background: #27ae60;
+}
